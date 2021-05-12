@@ -449,45 +449,53 @@
           </svg>
         </button>
 
-        <h3>Оставьте свои данные, мы вам перезвоним</h3>
+        <h6 class="modal-heading">Оставьте свои данные, мы вам перезвоним</h6>
 
         <form action="">
 
-          <ul>
+          <ul class="list">
+            
+            <div class="modal-table">
+
             <li>
-              <label for="">Имя
-                <input type="text" name="name">
+              <label for="" class="label">Имя
+                <input type="text" name="name" class="input">
+                <span class="icon-name"> svg </span>
               </label>            
             </li>
 
             <li>
-              <label for="">Телефон
-                <input type="tel" name="tel">
+              <label for="" class="label">Телефон
+                <input type="tel" name="tel" class="input">
               </label>
             </li>
 
             <li> 
-              <label for="">Почта
-                <input type="email" name="email">
+              <label for="" class="label">Почта
+                <input type="email" name="email" class="input">
               </label>            
             </li>
 
             <li>
-              <label for="">Комментарий
-                <textarea name="comments" id="" cols="30" rows="10" placeholder=" Введите текст"></textarea>
+              <label for="" class="label">Комментарий
+                <textarea name="comments" id="" cols="30" rows="10" placeholder=" Введите текст" class="input-textarea"></textarea>
               </label>
             </li>
 
-            <li>    
-              <input type="checkbox" name="distribution"> 
-                <label for="">Соглашаюсь с рассылкой и принимаю 
-                  <a href="">Условия договора</a>
-                </label>
+            <li>
+              <div class="checkbox">  
+                <input type="checkbox" name="distribution"> 
+                  <label for="" class="agree-text">Соглашаюсь с рассылкой и принимаю 
+                    <a href="">Условия договора</a>
+                  </label>
+              </div>
             </li>
 
             <li>
-              <button type="submit">Отправить</button>
+              <button type="submit" class="send-button">Отправить</button>
             </li>
+
+            </div>
 
           </ul>
 
