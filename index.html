@@ -461,19 +461,27 @@
             <li>
               <label for="" class="label">Имя
                 <input type="text" name="name" class="input">
-                <span class="icon-name"> svg </span>
+                <svg class="icon-name">
+                  <use href="./images/sprite.svg#icon-name"></use>
+                </svg>
               </label>            
             </li>
 
             <li>
               <label for="" class="label">Телефон
                 <input type="tel" name="tel" class="input">
+                <svg class="icon-tel">
+                  <use href="./images/sprite.svg#icon-tel"></use>
+                </svg>
               </label>
             </li>
 
             <li> 
               <label for="" class="label">Почта
                 <input type="email" name="email" class="input">
+                <svg class="icon-mail">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
               </label>            
             </li>
 
@@ -484,13 +492,27 @@
             </li>
 
             <li>
-              <div class="checkbox">  
-                <input type="checkbox" name="distribution"> 
-                  <label for="" class="agree-text">Соглашаюсь с рассылкой и принимаю 
-                    <a href="">Условия договора</a>
-                  </label>
+              <div class="checkbox">
+                
+                <label class="agree-text">
+                                  
+                <input type="checkbox" name="distribution" class="checkbox-input">
+                <svg class="checkbox-icon">
+                  <use href="./images/sprite.svg#icon-mark"></use>
+                </svg>
+                Соглашаюсь с рассылкой и принимаю
+               
+                <a href="" class="agree-text-link">Условия договора</a>
+                
+              </label>
               </div>
+
+              
+
+            
             </li>
+        
+              
 
             <li>
               <button type="submit" class="send-button">Отправить</button>

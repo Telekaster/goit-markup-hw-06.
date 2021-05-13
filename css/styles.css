@@ -832,6 +832,18 @@ background-color: rgba(47, 48, 58, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #fff;
+  
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:target {
+  cursor: pointer;
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:target .modal-close-icon {
+  fill: var(--brandcolor);
+  
 }
 
 .modal-close-icon {
@@ -839,6 +851,8 @@ background-color: rgba(47, 48, 58, 0.8);
   right: 50%;
   width: 11px;
   height: 11px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -860,15 +874,40 @@ margin-bottom: 12px;
 
 
 .input {
+  position: relative;
   display: flex;
   width: 448px;
   height: 40px;
+  padding-left: 35px;
   margin: auto;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
+
+input {
+  outline: none;
+}
+
+.input:focus-within {
+  border-color: var(--brandcolor);
+}
+
+.input:focus-within + .icon-name {
+  fill: var(--brandcolor);
+}
+
+.input:focus-within + .icon-tel {
+   fill: var(--brandcolor);
+}
+
+.input:focus-within + .icon-mail {
+   fill: var(--brandcolor);
+}
+
+
 
 .input-textarea {
   display: flex;
@@ -876,11 +915,25 @@ margin-bottom: 12px;
   height: 120px;
   margin: auto;
   margin-bottom: 20px;
+  padding: 12px 16px 12px 16px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: #75757580;
 }
+
+textarea {
+  outline: none;
+}
+
+.input-textarea:focus-within {
+  border-color: var(--brandcolor);
+}
+
 
 .modal-table {
   display: flex;
@@ -889,19 +942,40 @@ margin-bottom: 12px;
 
 .checkbox {
   display: flex;
-  align-items: center;
-  margin-left: 52px;
+  margin-left: 15px;
   margin-bottom: 30px;
-
 }
 
+.checkbox-icon {
+  position: relative;
+  top: 2px;
+  align-content: center;
+  width: 16px;
+  height: 15px;
+  border: #212121 solid 2px;
+  border-radius: 2px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background: #2196f3;
+  border: #2196f3 solid 2px;
+}
+
+
+
 .agree-text {
-  margin-left: 8.5px;
+  padding-left: 35px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+
 }
+
+.checkbox-input {
+  appearance: none;
+}
+
 
 .send-button {
   display: flex;
@@ -915,8 +989,34 @@ margin-bottom: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
+}
 
+.icon-name {
+  position: absolute;
+  top: 106px;
+  left: 56px;
+  width: 12px;
+  height: 12px;
+}
 
+.icon-tel {
+  position: absolute;
+  top: 176px;
+  left: 56px;
+  width: 12px;
+  height: 12px;
+}
+
+.icon-mail {
+  position: absolute;
+  top: 242px;
+  left: 56px;
+  width: 12px;
+  height: 12px;
+}
+
+.agree-text-link {
+  color: var(--brandcolor);
 }
 
 /* Футер подписка */

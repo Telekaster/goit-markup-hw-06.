@@ -23,60 +23,55 @@
   height: 32px;
   background-position: -144px 0;
 }
-.icon-send {
+.icon-tel {
   width: 32px;
   height: 32px;
   background-position: -192px 0;
 }
-.icon-tel {
+.icon-cross {
   width: 32px;
   height: 32px;
   background-position: -240px 0;
 }
-.icon-cross {
+.icon-antenna-1 {
   width: 32px;
   height: 32px;
   background-position: -288px 0;
 }
-.icon-antenna-1 {
+.icon-astronaut-1 {
   width: 32px;
   height: 32px;
   background-position: -336px 0;
 }
-.icon-astronaut-1 {
+.icon-clock-1 {
   width: 32px;
   height: 32px;
   background-position: -384px 0;
 }
-.icon-clock-1 {
+.icon-diagram-1 {
   width: 32px;
   height: 32px;
   background-position: -432px 0;
 }
-.icon-diagram-1 {
-  width: 32px;
-  height: 32px;
-  background-position: -480px 0;
-}
 .icon-envelope-hover {
   width: 43px;
   height: 32px;
-  background-position: -528px 0;
+  background-position: -480px 0;
 }
 .icon-facebook-1 {
   width: 32px;
   height: 32px;
-  background-position: -624px 0;
+  background-position: -576px 0;
 }
 .icon-instagram-2 {
   width: 32px;
   height: 32px;
-  background-position: -672px 0;
+  background-position: -624px 0;
 }
 .icon-linkedin-1 {
   width: 32px;
   height: 32px;
-  background-position: -720px 0;
+  background-position: -672px 0;
 }
 .icon-Logo-1 {
   width: 57px;
