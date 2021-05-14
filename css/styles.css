@@ -1065,9 +1065,15 @@ textarea {
   border-radius: 4px;
   background: #2F303A;
   padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-button {
+border: none;
   text-align: left;
   padding: 0;
   margin: 0;
